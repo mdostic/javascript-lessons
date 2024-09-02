@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Advanced Functions</title>
+    </head>
+    <body>
+        <script>
+            // function() is an anonymous function or unamed, 
+            // const function1 = function(){
+            //     console.log('hello2')
+            // }
+
+            const Arr = [1,2, -2, -4, 3]
+
+            // Arr.forEach((val, index) => {
+            //     console.log("" + val + index);
+            // })
+            
+            // filters using true and false
+            const filtered = Arr.filter((value, index) => {
+                // if (value > -1){
+                //     return true;
+                // }
+                // return false;
+                return value > -1;
+            });
+            console.log(filtered);
+
+            // Overwrites list
+            const mapped = Arr.map((value, index) => {
+                return 10 + value;
+            });
+
+            console.log(mapped);
+
+            const mapped2 = Arr.map(value => value*2);
+            console.log(mapped2);
+
+        </script>
+    </body>
+</html>

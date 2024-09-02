@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body>
+    
+        <script>
+            const product = {
+                name : 'socks',
+                price: 1090
+            }
+            // Create a string in the JSON format
+            // JSON objects can be sent through networks between software
+            const JSON_product = JSON.stringify(product);
+            // returns back to an object
+            const object_product = JSON.parse(JSON_product);
+            // stores a a key and value into a refreshable storage, ONLY SUPPORTS STRINGS
+            localStorage.setItem('message', 'hello');
+        </script>
+    </body>
+
+</html>
